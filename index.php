@@ -9,7 +9,7 @@ $data_artikel = $db->Tampil_data_landing();
 
 		<div class="row mb-4">
 			<div class="col-sm-6">
-				<h2 class="posts-entry-title">Mading Jewepe</h2>
+				<h2 class="posts-entry-title">Mading Jewepe Berubah</h2>
 			</div>
 			<div class="col-sm-6 text-sm-end"><a href="category.html" class="read-more">View All</a></div>
 		</div>
