@@ -6,7 +6,7 @@ class database{
     var $username = 'root';
     var $password = '';
     var $database = 'db_mading';
-    var $koneksi = '';
+    var $koneksi;
 
     function __construct()
     {
@@ -73,7 +73,7 @@ class database{
         $query = mysqli_query($this->koneksi, "UPDATE tb_artikel set judul_artikel = '$judul_artikel', isi_artikel = '$isi_artikel', status_publish = '$status_publish', id_users = '$id_users', uploaded_at = '$datetime' where id_artikel = '$id_artikel'") or die (mysqli_error($this->koneksi));
         return $query;
     }else{
-                $query = mysqli_query($this->koneksi, "UPDATE tb_artikel set header = '$header', judul_artikel = '$judul_artikel', isi_artikel = '$isi_artikel', status_publish = '$status_publish', id_uers = '$id_users', uploaded_at = '$datetime' where id_artikel = '$id_artikel'") or die(mysqli_error($this->koneksi));
+                $query = mysqli_query($this->koneksi, "UPDATE tb_artikel set header = '$header', judul_artikel = '$judul_artikel', isi_artikel = '$isi_artikel', status_publish = '$status_publish', id_users = '$id_users', uploaded_at = '$datetime' where id_artikel = '$id_artikel'") or die(mysqli_error($this->koneksi));
                 return $query;
     }
     }
